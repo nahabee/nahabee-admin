@@ -28,7 +28,7 @@ const httpClient = (url: string, options: any = {}) => {
 };
 
 const dataProvider = simpleRestProvider(
-  "http://localhost:8000/api",
+  "https://nahabee.herokuapp.com/api",
   httpClient
 );
 

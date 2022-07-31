@@ -5,15 +5,18 @@ import {
   TextInput,
   ReferenceInput,
   SelectInput,
+  NumberInput,
 } from "react-admin";
 import { PostEditActions } from "./PostEditActions";
 
 export default interface IImage {
   name: string;
   brand: string;
+  idPage: number;
 }
 
-const optionRenderer = (image: IImage) => ` ${(image.name, image.brand)}`;
+const optionRenderer = (image: IImage) =>
+  ` ${(image.name, image.brand, image.idPage)}`;
 
 export const ImageCreate = (props: ListProps) => (
   <Create
@@ -23,6 +26,7 @@ export const ImageCreate = (props: ListProps) => (
   >
     <SimpleForm warnWhenUnsavedChanges>
       <TextInput source="name" />
+      <NumberInput source="idPage" />
       <TextInput source="brand" />
       <ReferenceInput source="idBrand" reference="brands" allowEmpty>
         {/* Ceci permet de faire une liste déroulante qui va aller afficher le résultat de la fonction optionRenderer : firstname lastname */}
