@@ -28,7 +28,7 @@ export const ImageCreate = (props: ListProps) => (
       <TextInput source="name" />
       <NumberInput source="idPage" />
       <TextInput source="brand" />
-      <ReferenceInput source="idBrand" reference="brands" allowEmpty>
+      <ReferenceInput source="idBrand" reference="brands" disabled>
         {/* Ceci permet de faire une liste déroulante qui va aller afficher le résultat de la fonction optionRenderer : firstname lastname */}
         <SelectInput optionText={optionRenderer} />
       </ReferenceInput>
