@@ -8,13 +8,21 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.2",
+    "@mui/styled-engine-sc": "^5.8.0",
     "axios": "^0.25.0",
+    "husky": "^8.0.1",
     "prop-types": "^15.8.1",
     "ra-data-json-server": "^3.19.6",
     "ra-data-simple-rest": "^3.19.6",
     "react": "^17.0.2",
     "react-admin": "^3.19.6",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-transition-group": "^4.4.4",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@types/react": "^17.0.33",

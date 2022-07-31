@@ -1,13 +1,10 @@
 import {
-  BooleanField,
   Datagrid,
   EmailField,
-  FunctionField,
   Identifier,
   List,
   ListProps,
   NumberField,
-  Record,
   TextField,
 } from "react-admin";
 import BooleanNumField from "./BooleanNumField.jsx";
