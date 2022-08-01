@@ -11,7 +11,7 @@ import { PostEditActions } from "./PostEditActions";
 const ImageEdit = (props: ListProps) => (
   <Edit {...props} actions={<PostEditActions />}>
     <SimpleForm>
-      <NumberInput source="id" disabled />
+      <NumberInput source="id" />
       <TextInput source="name" />
       <TextInput source="brand" />
       <NumberInput source="idPage" />
