@@ -15,6 +15,7 @@ const ImageEdit = (props: ListProps) => (
       <TextInput source="name" />
       <TextInput source="brand" />
       <NumberInput source="idPage" />
+      <NumberInput source="type" />
       {/* NumberInput hidden for value, ButtonNumField for design */}
       <NumberInput source="admin" style={{ display: "none" }} />
       <ButtonNumField source="admin" label="Admin" />

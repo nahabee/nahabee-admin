@@ -13,10 +13,11 @@ export default interface IImage {
   name: string;
   brand: string;
   idPage: number;
+  type: number;
 }
 
 const optionRenderer = (image: IImage) =>
-  ` ${(image.name, image.brand, image.idPage)}`;
+  ` ${(image.name, image.brand, image.idPage, image.type)}`;
 
 export const ImageCreate = (props: ListProps) => (
   <Create
@@ -27,6 +28,7 @@ export const ImageCreate = (props: ListProps) => (
     <SimpleForm warnWhenUnsavedChanges>
       <TextInput source="name" />
       <NumberInput source="idPage" />
+      <NumberInput source="type" />
       <TextInput source="brand" />
       <ReferenceInput source="idBrand" reference="brands" disabled>
         {/* Ceci permet de faire une liste déroulante qui va aller afficher le résultat de la fonction optionRenderer : firstname lastname */}

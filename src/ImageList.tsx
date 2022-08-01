@@ -17,6 +17,7 @@ const BrandList = (props: ListProps) => {
     <List {...props}>
       <Datagrid rowClick="edit">
         <NumberField source="idPage" />
+        <NumberField source="type" />
         <ImageField source="name" />
         <TextField source="brand" sortBy="images.brand" />
       </Datagrid>
